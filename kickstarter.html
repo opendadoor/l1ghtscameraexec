@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>l1ghts kickstarter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 24px;
+            font-size: 24px;
+        }
+        .upload-box {
+            border: 2px dashed #007bff;
+            padding: 30px 20px;
+            border-radius: 6px;
+            background: #f8faff;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .upload-box:hover {
+            background: #eef4ff;
+        }
+        .upload-box p {
+            margin: 0 0 15px 0;
+            color: #555;
+            font-size: 14px;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        .file-label {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>l1ghts kickstarter</h1>
+    <div class="upload-box" onclick="document.getElementById('patchUpload').click()">
+        <p>Upload Patch</p>
+        <label class="file-label">Choose File</label>
+        <input type="file" id="patchUpload" accept=".l1ghts">
+    </div>
+</div>
+
+</body>
+</html>
