@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "l1ghttools",
+  "version": "1.0.0",
+  "description": "Additional settings for l1ghts, deleting can cause issues.",
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
